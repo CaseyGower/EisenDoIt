@@ -1,10 +1,11 @@
 body {
     font-family: 'Raleway', sans-serif;
     text-align: center;
+    color: #0A0804;
 }
 #inputBox {
     margin: 0 auto;
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-bottom: 3rem;
     width: 100%;
     font-size: 3rem;
