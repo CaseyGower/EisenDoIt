@@ -9,6 +9,7 @@
     <title>Bootstrap Starter Template</title>
 
     <!-- Bootstrap -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,600,800" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -19,78 +20,48 @@
     <![endif]-->
 
     <link href="CSS/styles.css" rel="stylesheet">
+    <link href="CSS/jquery.dad.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Project name</a>
-            </div>
-            <div id="navbar" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <!--/.nav-collapse -->
-        </div>
-    </nav>
 
     <div class="container">
+        <h1> EisenDoIt!</h1>
         <row>
             <div class="col-md-12">
-                <form>
+                <form id="inputBox">
 
-                    <input type="text" name="fname">
+                    <input type="text" name="fname" value="Next To Do Item">
                     <input type="submit" value="Submit">
                 </form>
             </div>
         </row>
-
         <row>
-            <div class="col-2-md box"></div>
-            <div class="col-5-md box">
-                <p> urgent </p>
-            </div>
+            <table>
+                <tr id="row1">
+                    <td id="paddingCell"></td>
+                    <td id="urgent">
+                        Urgent
+                    </td>
+                    <td id="notUrgent"> Not Urgent </td>
+                </tr>
+                <tr id="row2">
+                    <td id="important"> Important </td>
+                    <td id="box1"> Box 1</td>
+                    <td id="box2"> Box 2 </td>
+                </tr>
+                <tr id="row3">
+                    <td id="notImportant"> Not Important </td>
+                    <td id="box3"> Box 3 </td>
+                    <td id="box4"> Box 4 </td>
+                </tr>
 
-            <div class="col-5-md box">
-                <p> Not Urgent </p>
-            </div>
+            </table>
+
         </row>
 
-        <row>
-            <div class="col-md-2 box">
-                <p> Important </p>
-            </div>
-            <div class="col-md-5 box">
-                <p> Box 1 </p>
-            </div>
 
-            <div class="col-md-5 box">
-                <p> Box 2 </p>
-            </div>
-        </row>
-        <row>
-            <div class="col-md-2 box">
-                <p> Not Important </p>
-            </div>
-            <div class="col-md-5 box">
-                <p> Box 3 </p>
-            </div>
-
-            <div class="col-md-5 box">
-                <p> Box 4 </p>
-            </div>
-        </row>
     </div>
     <!-- /.container -->
 
@@ -99,6 +70,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="JS/jquery.dad.js"></script>
 </body>
 
 </html>

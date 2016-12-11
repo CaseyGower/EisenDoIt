@@ -1,0 +1,35 @@
+<row>
+            <div class="col-2-md box"></div>
+            <div class="col-5-md box">
+                <p> urgent </p>
+            </div>
+
+            <div class="col-5-md box">
+                <p> Not Urgent </p>
+            </div>
+        </row>
+
+        <row>
+            <div class="col-md-2 box">
+                <p> Important </p>
+            </div>
+            <div class="col-md-5 box">
+                <p> Box 1 </p>
+            </div>
+
+            <div class="col-md-5 box">
+                <p> Box 2 </p>
+            </div>
+        </row>
+        <row>
+            <div class="col-md-2 box">
+                <p> Not Important </p>
+            </div>
+            <div class="col-md-5 box">
+                <p> Box 3 </p>
+            </div>
+
+            <div class="col-md-5 box">
+                <p> Box 4 </p>
+            </div>
+        </row>

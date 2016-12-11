@@ -1,4 +1,56 @@
-.box {
-    border: 2px solid black;
+body {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+#inputBox {
     margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    font-size: 3rem;
+    font-stretch: extra-expanded;
+}
+table {
+    width: 100%;
+}
+td {
+    border: 5px #0A0804 solid;
+}
+h1 {
+    text-align: left;
+    font-weight: 800;
+}
+#urgent,
+#notUrgent,
+#important,
+#notImportant,
+#paddingCell {
+    border: none;
+    font-weight: 600;
+    font-size: 2rem;
+}
+#box1 {
+    width: 50rem;
+    height: 30rem;
+    background: #E42B23;
+    color: white;
+    text-align: center;
+}
+#box2 {
+    width: 50rem;
+    height: 30rem;
+    background: #FEE425;
+    text-align: center;
+}
+#box3 {
+    width: 50rem;
+    height: 30rem;
+    background: #FEE425;
+    text-align: center;
+}
+#box4 {
+    width: 50rem;
+    height: 30rem;
+    background: #0ABF04;
+    text-align: center;
 }
