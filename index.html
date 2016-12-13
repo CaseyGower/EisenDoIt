@@ -29,13 +29,15 @@
         <h1> EisenDoIt!</h1>
         <row>
             <div class="col-md-12">
-                <div id="myDIV" class="header">
-                    <h2>Add to list</h2>
-                    <input type="text" id="myInput" placeholder="Title...">
-                    <span onclick="newElement()" class="addBtn">Add</span>
+                <div class="form-group">
+                    <label for="newToDo">New To Do </label>
+                    <input type="text" class="form-control" id="newToDo">
+
+                    <button class="btn btn-danger" id="submitButton1">Add To Box 1</button>
+                    <button class="btn btn-warning" id="submitButton2">Add To Box 2</button>
+                    <button class="btn btn-warning" id="submitButton3">Add To Box 3</button>
+                    <button class="btn btn-success" id="submitButton4">Add To Box 4</button>
                 </div>
-
-
             </div>
         </row>
         <row>
@@ -51,17 +53,13 @@
                     <td id="important"> Important </td>
                     <td id="box1">
                         <div class="demo">
-                            <ul id="myUL">
-                                <li> </li>
-                            </ul>
+                            <div>...</div>
 
                         </div>
                     </td>
                     <td id="box2">
-                        <div class="demo" id="myUL">
-                            <ul>
-                                <li> </li>
-                            </ul>
+                        <div class="demo">
+                            <div>...</div>
 
                         </div>
                     </td>
@@ -69,18 +67,15 @@
                 <tr id="row3">
                     <td id="notImportant"> Not Important </td>
                     <td id="box3">
-                        <div class="demo" id="myUL">
-                            <ul>
-                                <li> </li>
-                            </ul>
+
+                        <div class="demo">
+                            <div>...</div>
 
                         </div>
                     </td>
                     <td id="box4">
-                        <div class="demo" id="myUL">
-                            <ul>
-                                <li> </li>
-                            </ul>
+                        <div class="demo">
+                            <div>...</div>
 
                         </div>
                     </td>
