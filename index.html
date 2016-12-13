@@ -52,15 +52,41 @@
                 <tr id="row2">
                     <td id="important"> Important </td>
                     <td id="box1">
-                        <div class="demo">
-                            <div>...</div>
-
+                        <div id="daddy2" class="dad">
+                            <div>
+                                <div>1</div>
+                            </div>
+                            <div>
+                                <div>2</div>
+                            </div>
+                            <div>
+                                <div>3</div>
+                            </div>
+                            <div>
+                                <div>4</div>
+                            </div>
+                            <div>
+                                <div>5</div>
+                            </div>
                         </div>
                     </td>
                     <td id="box2">
-                        <div class="demo">
-                            <div>...</div>
-
+                        <div id="daddy2" class="dad">
+                            <div>
+                                <div>1</div>
+                            </div>
+                            <div>
+                                <div>2</div>
+                            </div>
+                            <div>
+                                <div>3</div>
+                            </div>
+                            <div>
+                                <div>4</div>
+                            </div>
+                            <div>
+                                <div>5</div>
+                            </div>
                         </div>
                     </td>
                 </tr>
@@ -68,15 +94,41 @@
                     <td id="notImportant"> Not Important </td>
                     <td id="box3">
 
-                        <div class="demo">
-                            <div>...</div>
-
+                        <div id="daddy2" class="dad">
+                            <div>
+                                <div>1</div>
+                            </div>
+                            <div>
+                                <div>2</div>
+                            </div>
+                            <div>
+                                <div>3</div>
+                            </div>
+                            <div>
+                                <div>4</div>
+                            </div>
+                            <div>
+                                <div>5</div>
+                            </div>
                         </div>
                     </td>
                     <td id="box4">
-                        <div class="demo">
-                            <div>...</div>
-
+                        <div id="daddy2" class="dad">
+                            <div>
+                                <div>1</div>
+                            </div>
+                            <div>
+                                <div>2</div>
+                            </div>
+                            <div>
+                                <div>3</div>
+                            </div>
+                            <div>
+                                <div>4</div>
+                            </div>
+                            <div>
+                                <div>5</div>
+                            </div>
                         </div>
                     </td>
                 </tr>
@@ -95,8 +147,43 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!-- <script src="JS/jquery.dad.js"></script> -->
+    <script src="JS/jquery.dad.js"></script>
     <script src="JS/javaScript.js"></script>
+
+    <script>
+        $(function() {
+
+            //dad simple demo
+            $('.dad').dad();
+
+            //dad dropzone
+            var d = $('.dad2').dad();
+            d.addDropzone('.dropzone', function(e) {
+                e.remove();
+            });
+
+            //dad activate and deactivate
+            $('.act').on('click', function() {
+                $('.btndemo').not(this).removeClass('active');
+                $(this).addClass('active');
+                d.css('opacity', 1);
+                d.activate();
+            });
+
+            $('.deact').on('click', function() {
+                $('.btndemo').not(this).removeClass('active');
+                $(this).addClass('active');
+                d.css('opacity', 0.5);
+                d.deactivate();
+            });
+
+            $('.dad-draggable').dad({
+                draggable: '.draggable'
+            });
+
+        });
+
+    </script>
 </body>
 
 </html>
