@@ -33,3 +33,28 @@
                 <p> Box 4 </p>
             </div>
         </row>
+        
+        
+         // when button is clicked...
+    $("#submitButton").click(function (event) {
+        // get new comment text from input box
+        var inputText = $("#newToDo").val();
+
+        var newToDo = $("<li>");
+        newToDo.text(inputText);
+
+
+        $("#box1").append(newToDo);
+
+        $("#newToDo").val("");
+
+
+    });
+    
+    
+    <div class="form-group">
+                    <label for="newToDo">New To Do </label>
+                    <input type="text" class="form-control" id="newToDo">
+
+                    <button class="btn btn-default" id="submitButton">Add To Do</button>
+                </div>

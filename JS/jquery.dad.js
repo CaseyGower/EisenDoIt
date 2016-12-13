@@ -319,3 +319,10 @@
         return this;
     };
 })(jQuery);
+
+/*
+$(function () {
+    $('.demo').dad(options);
+   $(dragable: '.demo')
+});
+*/
