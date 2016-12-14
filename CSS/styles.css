@@ -55,5 +55,7 @@ h1 {
     background: #0ABF04;
     text-align: center;
 }
-
-/* Include the padding and border in an element's total width and height */
+li {
+    font-size: 2rem;
+    font-weight: 300;
+}
